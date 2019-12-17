@@ -69,6 +69,6 @@ Unter Code Smell versteht man Teile des Codes, die nicht benötigt werden zum fu
 - Unbenutzer Code sollte gelöscht werden, genau so wie ausgeblendeter Code wenn er nicht gebraucht wird. Führt zu mehr Übersicht.
 
 #### 10. Falsche Klammern
-Kann passieren das es am Anfang noch funktioniert aber kann schnell zu fehlerhaften Code führen und im Nachhinein Probleme verursachen.
+- Kann passieren das es am Anfang noch funktioniert aber kann schnell zu fehlerhaften Code führen und im Nachhinein Probleme verursachen.
 
  
