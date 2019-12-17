@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
     [SerializeField] float jumpForce;
-
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -28,7 +26,6 @@ public class PlayerController : MonoBehaviour
     }
     bool grounded;
     bool gameOver = false;
-
     void jump()
     {
         grounded = false;
@@ -40,12 +37,10 @@ public class PlayerController : MonoBehaviour
         GameManager.instance.IncrementScore();
         Debug.Log("DeleteMe");
     }
-
     private bool SetGameOverTrue()
     {
         return true;
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Ground")
@@ -53,7 +48,6 @@ public class PlayerController : MonoBehaviour
             grounded = true;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Obstacle")
