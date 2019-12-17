@@ -27,7 +27,6 @@ public class Obstacle : MonoBehaviour
         }
 
     }
-
     private void FixedUpdate()
     {
         rb.velocity = Vector2.left * MoveSpeed;
