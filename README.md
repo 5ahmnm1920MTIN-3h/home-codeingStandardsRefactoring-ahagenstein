@@ -41,6 +41,34 @@ Unter Code Smell versteht man Teile des Codes, die nicht benötigt werden zum fu
 
 ### Recherche von 10 Code Smells die Eure Projekt betreffen können, inkl. Beschreibung und Beispiel.
 
+#### 1.  Kommentare    
+- Kommentare sollen den Code unterstützen aber nicht mehr als der Code selber ausmachen, zu viele Kommentare sind auch nicht hilfreich
 
+#### 2. Namen sollten Sinnbehaftet sein
+- Variablen, Klassen, Methoden usw sollten so benannt werden, dass es Sinn ergibt und man davon die Funktion ablesen kann
+
+#### 3. Redundanter Code
+- Doppelter Code sollte vermieden werden, macht alles viel unübersichtlicher
+
+#### 4. Zu lange Methoden
+- Eine Methode soll nur eine Funktion erfüllen und nicht zuviele Zeilen Code beinhalten. Es sollte vor allem auf Grund der Verständlichkeit und Unübersichtlichkeit vermieden werden.
+
+#### 5. Namen/ Bezeichnung zu kurz
+- Methoden, Klassen und Variablen sollten mit Sinnbehafteten Namen benannt werden und nach dem Bennenungsstandard, nur einzelne Buchstaben machen keinen Sinn und führen zur unverständlichkeit des Codes
+
+#### 6. Zu lange Namen
+- Jedoch sind viel zu lange Namen auch nicht Sinnvoll und führen genau zum selben wie zu kurze Namen - Sinnbehaftete Namen sind wichtig!!
+
+#### 7. Verschachtelungen
+- Verschachtelungen erschweren die Lesbarkeit und Verständlichkeit sehr.
+
+#### 8. Unnötige Leerzeilen
+- Unnötige Leerzeilen sollten vermieden werden, weniger ist mehr. Leerzeilen sind oft unnötiger Verbrauch von Zeilen.
+
+#### 9. Unbenutzer Code
+- Unbenutzer Code sollte gelöscht werden, genau so wie ausgeblendeter Code wenn er nicht gebraucht wird. Führt zu mehr Übersicht.
+
+#### 10. Falsche Klammern
+Kann passieren das es am Anfang noch funktioniert aber kann schnell zu fehlerhaften Code führen und im Nachhinein Probleme verursachen.
 
  
