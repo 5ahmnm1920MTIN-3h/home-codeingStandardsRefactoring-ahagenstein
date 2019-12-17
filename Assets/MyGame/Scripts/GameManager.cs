@@ -15,24 +15,11 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Debug.Log("in Start");   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("in Update");
-    }
-
     public void GameOver()
     {
         ObstacleSpawner.instance.gameOver = true;
@@ -44,10 +31,9 @@ public class GameManager : MonoBehaviour
     {
         TextureScroll[] scrollingObjects = FindObjectsOfType<TextureScroll>();
 
-        foreach(TextureScroll item in scrollingObjects)
+        foreach (TextureScroll item in scrollingObjects)
         {
             item.scroll = false;
-            Debug.Log(item.name);
         }
     }
 
