@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObstacleSpawner : MonoBehaviour
 {
+    public const string spawning = "Spawn";
     public static ObstacleSpawner instance;
 
     public GameObject[] obstacles;
@@ -21,7 +22,7 @@ public class ObstacleSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine("Spawn");
+        StartCoroutine(spawning);
     }
     IEnumerator Spawn()
     {
@@ -32,9 +33,7 @@ public class ObstacleSpawner : MonoBehaviour
         while (!gameOver)
         {
             SpawnObstacle();
-
             waitTime = Random.Range(minSpawnTime, maxSpawnTime);
-
             yield return new WaitForSeconds(waitTime);
         }
     }
